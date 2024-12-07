@@ -1,0 +1,119 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(to right, #ffa500, #ffcc66);
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #333;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #006600;
+}
+
+/* Imágenes decorativas */
+header img {
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+header img:first-child {
+    left: 10px;
+}
+
+header img:last-child {
+    right: 10px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #d6f5d6;
+    border: 2px solid #99cc99;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    background-color: #99ccff;
+    border: 2px solid #66b3ff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #66b3ff;
+    color: white;
+}
+
+/* Contenido principal */
+main {
+    background-color: #e6f7ff;
+    border: 2px solid #cceeff;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main h2 {
+    background-color: #ff9933;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Imagen principal */
+main img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #fffbcc;
+    border-top: 3px solid #cccc99;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
