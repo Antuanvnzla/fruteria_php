@@ -16,10 +16,13 @@ if(isset($_GET['apartat'])){
 <body>
     <!-- Cabecera -->
     <header>
-        <img src="images/cherry.png" alt="Cherry" class="left-icon">
+        <img src="images/cereza.jpg" alt="Cherry" class="left-icon">
         <h1>Projecte PHP Entorns</h1>
         <h2>Fruiteria Verduleria Online</h2>
-        <img src="images/apple.png" alt="Apple" class="right-icon">
+        <?php
+        include "include/data.partial.php";
+        ?>
+        <img src="images/manzana.png" alt="Apple" class="right-icon">
     </header>
 
     <!-- Menú de navegación -->
@@ -28,7 +31,7 @@ if(isset($_GET['apartat'])){
             <li><a href="index.php?apartat=inicio">Inicio</a></li>
             <li><a href="index.php?apartat=registro">Registro</a></li>
             <li><a href="index.php?apartat=contacto">Contacto</a></li>
-            <li><a href="index.php?apartat=botiga">Botica</a></li>
+            <li><a href="index.php?apartat=botica">Botica</a></li>
         </ul>
     </nav>
 
