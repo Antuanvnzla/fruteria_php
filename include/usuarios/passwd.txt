@@ -1,0 +1,16 @@
+admin:admin@dam.com:admin
+juan:juan@mail.com:123
+maria:maria@mail.com:123
+carla:carla@mail.com:123
+pedro:pedro@mail.com:123
+sofia:sofia@mail.com:123
+antuan:antuan@mail.com:123
+luis:luis@mail.com:123
+jorge:jorge@mail.com:123
+paola:paola@mail.com:123
+felipe:felipe@mail.com:123
+claudia:claudia@mail.com:123
+victor:victor@mail.com:123
+monica:monica@mail.com:123
+daniel:daniel@mail.com:123
+raul:raul@mail.com:123

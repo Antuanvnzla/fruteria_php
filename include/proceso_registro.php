@@ -46,7 +46,16 @@ $estilos = $_POST['estilos'] ?? 'index.css';
                     $apellido = htmlspecialchars($_POST['apellido'] ?? $sinValor);
                     $direccion = htmlspecialchars($_POST['direccion'] ?? $sinValor);
                     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) ? htmlspecialchars($_POST['email']) : "Correo inválido";
-                    $contrasena = !empty($_POST['password']) ? password_hash($_POST['password'], PASSWORD_BCRYPT) : $sinValor;
+
+                    // Validación de contraseña
+                    $contrasena = $_POST['password'] ?? '';
+                    $pattern = "/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/";
+                    if (!preg_match($pattern, $contrasena)) {
+                        echo "<p>La contraseña debe tener al menos 6 caracteres, incluir una letra mayúscula, un número y un carácter especial.</p>";
+                        exit;
+                    }
+                    $contrasena = password_hash($contrasena, PASSWORD_BCRYPT);
+
                     $poblacion = htmlspecialchars($_POST['poblacion'] ?? $sinValor);
                     $telefono = htmlspecialchars($_POST['telefono'] ?? $sinValor);
                     $horario = htmlspecialchars($_POST['horario'] ?? $sinValor);
@@ -108,13 +117,11 @@ $estilos = $_POST['estilos'] ?? 'index.css';
                                     <p style='margin: 5px 0;'>$fruta</p>
                             </div>";
                         }
-                        
-                        echo "</div>";
                     } else {
                         echo "<p><strong>No se seleccionaron frutas.</strong></p>";
                     }
 
-                   // Puntuación
+                    // Puntuación
                     $puntuacion = (int) ($_POST['puntuacion'] ?? 0);
                     $multiplicador = (int) ($_POST['multiplicador'] ?? 1);
 

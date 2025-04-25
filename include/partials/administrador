@@ -1,0 +1,64 @@
+<?php
+function gestionaUsuarios() {
+    $rutaArchivo = 'usuarios/passwd.txt';
+
+    if (!file_exists($rutaArchivo)) {
+        echo "<p>Error: El archivo $rutaArchivo no existe.</p>";
+        return;
+    }
+
+    if (!is_readable($rutaArchivo)) {
+        echo "<p>Error: No se puede leer el archivo $rutaArchivo.</p>";
+        return;
+    }
+
+    $usuarios = file($rutaArchivo, FILE_IGNORE_NEW_LINES);
+
+    if (empty($usuarios)) {
+        echo "<p>No hay usuarios registrados.</p>";
+        return;
+    }
+
+    echo '<table border="1">';
+    echo '<tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Contraseña</th>
+        <th>Acción</th>
+    </tr>';
+
+    foreach ($usuarios as $columna) {
+        $usuario = explode(':', $columna);
+
+        if (count($usuario) !== 3) {
+            echo "<p>Error: Formato incorrecto en la línea: $columna</p>";
+            continue;
+        }
+
+        $nombre = $usuario[0];
+        $email = $usuario[1];
+        $contrasena = $usuario[2];
+
+        if ($email == 'admin@dam.com') {
+            echo '<tr>';
+            echo '<td>' . htmlspecialchars($nombre) . '</td>';
+            echo '<td>' . htmlspecialchars($email) . '</td>';
+            echo '<td>' . htmlspecialchars($contrasena) . '</td>';
+            echo '<td>No se puede eliminar</td>';
+            echo '</tr>';
+        } else {
+            echo '<tr>';
+            echo '<td>' . htmlspecialchars($nombre) . '</td>';
+            echo '<td>' . htmlspecialchars($email) . '</td>';
+            echo '<td>' . htmlspecialchars($contrasena) . '</td>';
+            echo '<td>
+                <a href="include/partials/eliminar_usuario.php?email=' . urlencode($email) . '">Eliminar</a>
+                </td>';
+            echo '</tr>';
+        }
+    }
+    echo '</table>';
+}
+
+gestionaUsuarios();
+?>
