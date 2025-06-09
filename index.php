@@ -15,6 +15,11 @@ function formatearNombre($nombre) {
     return ucfirst(strtolower($nombre));
 }
 
+if (isset($_GET['registro']) && $_GET['registro'] === 'ok') {
+    echo "<p style='color:green;'>Usuario registrado correctamente.</p>";
+}
+
+
 // Fecha y hora actual
 $fechaActual = date('d/m/Y H:i:s');
 

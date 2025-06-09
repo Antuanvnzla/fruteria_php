@@ -10,19 +10,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuarios = file($archivoUsuarios, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
         foreach ($usuarios as $usuario) {
-            list($nombre, $correo, $pass) = explode(":", $usuario);
+            list($nombre, $correo, $pass, $rol) = explode(":", $usuario);
 
-            // Compara directamente contraseña sin hash
             if ($correo === $email && $password === $pass) {
-                $_SESSION['nom'] = $nombre;  // Guardamos el nombre en sesión
+                $_SESSION['nom'] = $nombre;
+                $_SESSION['rol'] = $rol;  // Guardamos el rol en sesión
+
                 setcookie("usuario", $correo, time() + 3600, "/");
-                header("Location: ../index.php");
+
+                // Redirigir a zona de admin o usuario según rol
+                if ($rol === "admin") {
+                    header("Location: /partials/admin.partial.php");
+                } else {
+                    header("Location: ../index.php");
+                }
                 exit;
             }
         }
     }
 
-    // Si no se encuentra el usuario o la contraseña no coincide
+    // Usuario o contraseña incorrectos
     header("Location: ../index.php?error=login");
     exit;
 }

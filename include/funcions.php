@@ -27,4 +27,10 @@ function guardarUsuario($nombre, $email, $password, $rutaArchivo) {
     }
     return true;
 }
+
+// Función para redirigir con error de contraseñas no coincidentes
+function redirigirErrorContrasenyes() {
+    header("Location: index.php?apartat=registre&errorRegistre=contrasenyes");
+    die();
+}
 ?>
