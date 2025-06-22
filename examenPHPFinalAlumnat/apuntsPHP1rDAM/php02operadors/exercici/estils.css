@@ -1,0 +1,53 @@
+/* Estils exemples php */
+html{
+    background-color: #DDD;
+    font-family: "arial";
+    line-height: 30px;;
+}
+#cap{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+#cap h1{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #fff;
+    padding:10px;
+}
+#contingut {
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+#contingut #llista{
+    width:60%;
+    margin: 10px auto;
+    text-align:left;
+    font-size:1.5em;
+    border: solid 2px red;
+    background-color:rgb(199, 245, 199);
+}
+#contingut ol li{
+    margin: 5px;
+}
+
+#peu{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+.imatge{
+    width:100%;
+}

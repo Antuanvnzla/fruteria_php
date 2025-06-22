@@ -1,0 +1,58 @@
+/* Estils dels exemples */
+
+html{
+	font-family:arial;
+	font-size:20px;
+	line-height:30px;
+}
+
+body{
+	background-color:#CCC;
+	text-align:center;
+}
+
+#cap h1{
+	width:60%;
+	margin:10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:20px;
+	background-color:#BBF;
+}
+#contingut{
+	width:60%;
+	margin:10px auto 10px auto;
+	border:solid 2px red;
+	padding:10px;
+	background-color:#FBB;
+}
+#contingut h3{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#peu{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+.tauler{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#DDF;
+}
+.codi{
+	border:solid 1px green;
+	background-color: #8F8;
+	text-align: left;
+	margin:10px auto;
+	padding: 10px;
+}

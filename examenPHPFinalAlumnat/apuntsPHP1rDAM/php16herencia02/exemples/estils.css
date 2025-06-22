@@ -1,0 +1,47 @@
+/* Estils dels exemples */
+
+body{
+	background-color:#CCC;
+	text-align:center;
+	font-family:arial;
+	line-height:28px;
+}
+
+#cap h1{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#contingut{
+	width:60%;
+	margin:10px auto 10px auto;
+	border:solid 2px red;
+	padding:10px;
+	background-color:#FBB;
+}
+#contingut h3{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#peu{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+.tauler{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#DDF;
+}

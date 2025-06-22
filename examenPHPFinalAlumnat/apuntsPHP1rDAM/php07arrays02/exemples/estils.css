@@ -1,0 +1,75 @@
+/* Estils dels exemples */
+html{
+	box-sizing: border-box;
+}
+body{
+	background-color:#CCC;
+	text-align:center;
+	font-family: "arial";
+	line-height: 35px;
+}
+
+#cap h1{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#contingut{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 2px red;
+	padding:10px;
+	background-color:#FBB;
+}
+#contingut h2{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#contingut p {
+	width: 80%;
+	padding: 10px;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2em;
+	border: solid 2px blue;
+	background-color: white;
+}
+.tauler{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#DDF;
+}
+
+.codi {
+	width: 80%;
+	margin: 10px auto;
+	text-align: left;
+	font-size: 1.5em;
+	border: solid 2px red;
+	background-color: rgb(199, 245, 199);
+	padding: 5px;
+	color:blue;
+	font-weight:bold;
+}
+.menor{
+	font-size:1.2em;
+}
+
+#peu p{
+	width:80%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}

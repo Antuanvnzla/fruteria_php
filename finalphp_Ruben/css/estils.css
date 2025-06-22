@@ -1,0 +1,134 @@
+/* Estils de les etiquetes */
+
+body{
+	background-color:#CCC;
+	background-image: url("../img/fons01.jpg");
+	font-family: arial;
+	line-height:27px;
+	font-size:24px;
+}
+
+/* Estils dels id */
+
+/* contenidor extern */
+#wrapper{
+	width:80%;
+	margin:10px auto 10px auto;
+	
+}
+
+/* apartats */
+#cap{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+	text-align:center;
+}
+
+#cap h1{
+	width:40%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	/*border:solid black 1px;*/
+	display:inline;
+	vertical-align:middle;
+	padding:10px;
+}
+
+#exercici{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+}
+
+#peu{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+}
+
+#peu p{
+	width:50%;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+
+#exercici01{
+	background-color:rgba(255,255,255,0.6);
+}
+
+#exercici02{
+	background-color:rgba(255,255,255,0.6);
+}
+#form_exercici01, #form_exercici02, #form_exercici03{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+	text-align:center;
+}
+#form_exercici01 ul, #form_exercici02 ul, #form_exercici03 ul{
+	list-style-type:none;
+}
+#form_exercici01 ul li, #form_exercici02 ul li, #form_exercici03 ul li{
+	margin:10px;
+	text-align:left;
+}
+#exercici01 h2, #exercici02 h2, #exercici03 h2{
+	color:red;
+	font-family:arial;
+	width:50%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	padding:20px;
+}
+#exercici01 p, #exercici02 p, #exercici03 p{
+	font-family:arial;
+	width:70%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	text-align:left;
+	padding:10px;
+}
+
+/* Estils de les classes */
+
+.destacat{
+	display:inline-block;
+	font-weight:bold;
+	font-size:20px;
+	color:red;
+	text-decoration:underline;
+	margin-bottom:5px;
+}
+.fotocap{
+	height:100px;
+	vertical-align:middle;
+}
+.imatge{
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+.imatgeExercici02{
+	height:200px;
+}
+.comentari{
+	width:70%;
+	margin:10px auto 10px auto;
+	background-color:#CCC;
+	border:solid 1px black;
+	min-height:50px;
+	padding:5px;
+}
+.filaform{
+	width:70%;
+	margin:10px auto 10px auto;
+	background-color:#CCC;
+	border:solid 1px black;
+	padding:5px;
+	
+}
+

@@ -1,0 +1,135 @@
+/* Estils dels exemples */
+
+body{
+	background-color:#CCC;
+	text-align:center;
+	font-family:arial;
+	box-sizing: border-box;
+	line-height:26px;
+}
+#cap{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+
+#cap h1{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px red;
+	padding:10px;
+	color:red;
+	background-color:white;
+}
+#contingut{
+	width:60%;
+	margin:10px auto 10px auto;
+	border:solid 2px red;
+	padding:10px;
+	background-color:#FBB;
+}
+#contingut h3{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#contingut .taularesultats tr:first-child td{
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	padding:10px;
+	background-color:rgb(255, 244, 206);
+	color: red:#8C8
+}
+#peu{
+	width:60%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#BBF;
+}
+#peu p{
+	width:60%;
+	margin:10px auto ;
+	text-align:center;
+	border:solid 2px black;
+	padding:10px;
+	background-color:white;
+}
+#paginacio{
+	width:70%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	border:solid 2px blue;
+	font-family:arial;
+	font-size:20px;
+	padding:10px;
+	background-color:#BBF;
+}
+#paginacio p{
+	width:60%;
+	border: solid 1px black;
+	background-color:white;
+	margin:5px auto;
+	padding:5px;
+	text-align:center;
+		border-radius: 5px;
+}
+#paginacio .elementPaginacio{
+	display:inline-block;
+	padding:5px;
+	background-color:white;
+	border:solid 1px blue;
+	border-radius: 5px;
+	min-width: 40px;
+}
+.tauler{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 2px blue;
+	padding:10px;
+	background-color:#DDF;
+}
+
+.taularesultats{
+	width:90%;
+	margin:10px auto;
+	border:solid 1px black;
+	padding:10px;
+	background-color:#CCC;
+}
+#contingut .taularesultats tr:nth-child(2n){
+	margin:10px auto;
+	background-color:#8C8;
+}
+
+
+
+#contingut .taularesultats tr:nth-child(2n+1){
+	margin:10px auto;
+	background-color:rgb(231, 255, 231);
+
+}
+
+
+#contingut .taularesultats tr:first-child td{
+	margin:10px auto;
+	border:solid 1px black;
+	padding:10px;
+	background-color:rgb(255, 244, 206);
+	color: red;
+	text-align:center;
+}
+
+#contingut .taularesultats tr td.casella{
+	border:solid 1px black;
+	padding:10px;
+	text-align:center;
+}

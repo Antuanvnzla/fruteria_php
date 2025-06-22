@@ -1,0 +1,159 @@
+/* Estils de les etiquetes */
+
+body{
+	background-color:#CCC;
+	font-family:arial;
+	background-image: url("../img/fons02.jpg");
+}
+
+/* Estils dels id */
+
+/* contenidor extern */
+#wrapper{
+	width:80%;
+	margin:10px auto 10px auto;
+	
+}
+
+/* apartats */
+#cap{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+	text-align:center;
+}
+
+#cap h1{
+	width:40%;
+	margin:10px auto 10px auto;
+	text-align:center;
+	/*border:solid black 1px;*/
+	display:inline;
+	vertical-align:center;
+	padding:10px;
+}
+
+#contingut{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+}
+#contingut h2{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px red;
+	background-color:white;
+	padding:10px;
+	font-family:arial;
+}
+#contingut h3{
+	width:90%;
+	margin:10px auto 10px auto;
+	border:solid 1px red;
+	background-color:#bce4bc;
+	padding:10px;
+	font-family:arial;
+	text-align:center;
+}
+#contingut h4{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px red;
+	border-radius:25px;
+	background-color:#ccc;
+	padding:10px;
+	font-family:arial;
+	text-align:center;
+}
+#contingut #foto{
+	text-align:center;
+}
+#contingut p{
+	text-align:left;
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px red;
+	background-color:white;
+	padding:10px;
+	font-family:arial;
+}
+
+#contingut p.tornar{
+	text-align:center;
+	width:40%;
+	background-color:#bce4bc;
+}
+
+#peu{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+}
+
+#peu p{
+	width:50%;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+/* Estils de les classes */
+
+.exercici{
+	min-height:50px;
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+	text-align:center;
+}
+.fotocap{
+	height:100px;
+	/*border:solid black 1px;*/
+	vertical-align:middle;
+}
+
+.paraula{
+	width:80%;
+	margin:10px auto 10px auto;
+	border:solid 1px black;
+	background-color:white;
+}
+
+.destacat{
+	margin:10px;
+	color:red;
+	font-size:1.1em;
+}
+.imatge{
+	width:400px;
+}
+
+.avis{
+	background-color:#FFA500;
+}
+
+#contingut article.exercici h4.avisUsuaris{
+	background-color:#f2d6ee;
+}
+.imatgequadrat{
+	width:80px;
+	height:80px;
+}
+
+#contingut p.contenidorImatge{
+	text-align:center;
+}
+.intent{
+	display:inline-block;
+	border:solid 1ps red;
+	padding: 5px;
+	margin: 5px;
+	background-color: yellow;
+	color:red;
+	font-weight: bold;
+	min-width:50px;
+	text-align: center;
+	font-size: 1.5em;
+}

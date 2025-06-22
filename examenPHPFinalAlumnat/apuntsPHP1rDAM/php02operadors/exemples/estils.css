@@ -1,0 +1,82 @@
+/* Estils exemples php */
+html{
+    background-color: #DDD;
+    font-family: "arial";
+}
+
+#cap{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+#cap h1{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #fff;
+    padding:10px;
+}
+#contingut {
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+#contingut #codi{
+    width:70%;
+    margin: 10px auto;
+    text-align:left;
+    font-size:1.5em;
+    border: solid 2px red;
+    background-color:rgb(199, 245, 199);
+}
+#contingut p{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #fff;
+    padding:10px;
+}
+#contingut p span.resultat{
+    display:block;
+    width:70%;
+    margin:10px auto;
+    border: solid 2px rgb(135, 221, 114);
+    text-align: center;
+    background-color: #d1e4c4;
+    padding:10px;
+}
+#peu{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #b68383;
+    padding:10px;
+}
+#peu p{
+    width:60%;
+    margin:10px auto;
+    border: solid 2px #88F;
+    text-align: center;
+    background-color: #fff;
+    padding:10px;
+}
+.imatge{
+    width:100%;
+}
+.codi{
+    width:70%;
+    margin: 10px auto;
+    text-align:left;
+    font-size:1.5em;
+    border: solid 2px red;
+    background-color:rgb(199, 245, 199);
+}
