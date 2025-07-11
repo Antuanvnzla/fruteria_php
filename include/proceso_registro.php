@@ -51,7 +51,7 @@ if(isset($_GET['apartat'])){
                 $contrasena = $_POST['password'] != null ? htmlspecialchars($_POST['password']) : $sinValor;
                 $poblacion = $_POST['poblacion'] != null ? htmlspecialchars($_POST['poblacion']) : $sinValor;
                 $telefono = $_POST['telefono'] != null ? htmlspecialchars($_POST['telefono']) : $sinValor;
-                $horario = $_POST['horario'] ? htmlspecialchars($_POST['horario']) : $sinValor;
+                $horario = isset($_POST['horario']) ?htmlspecialchars($_POST['horario']) : $sinValor;
 
                 // Mostrar los datos procesados 
                 echo "<p><strong>Nombre:</strong> $nom</p>";
